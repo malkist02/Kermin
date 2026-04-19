@@ -14,6 +14,7 @@ jobs:
           - mido
 
     env:
+      TZ: Asia/Jakarta
       BOT_TOKEN: 8624576202:AAFqAW81XXn9Ki1of4GN7pvkCQ6PE2dqVR0
       CHAT_ID: -1002287610863
       KERNEL_VER: Wind-B1
@@ -25,9 +26,6 @@ jobs:
       KSU_BRANCH: hookless
 
     steps:
-    - name: Checkout workflow repo
-      uses: actions/checkout@v4
-
     - name: Install dependencies
       run: |
         sudo apt update
